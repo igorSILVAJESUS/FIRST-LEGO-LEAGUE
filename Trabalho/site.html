@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo de Robótica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+    header {
+      background-color: #00008B;
+      color: black;
+      padding-bottom: 0;
+      text-align: center;
+    }
+    .logo-container {
+      background-color: #00008B;
+      padding: 1rem;
+    }
+    .logo-container img {
+      width: 30%;
+    }
+    nav {
+      background-color: #0000FF;
+      padding: 0.5rem;
+      border-top: 2px solid white;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background-color: #1E3A8A;
+    }
+    nav a.active {
+      background-color: #2563EB;
+    }
+    section {
+      display: none;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    section.active {
+      display: block;
+    }
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ff6900;
+      color: white;
+      margin-top: 1rem;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .team-member {
+      text-align: center;
+      max-width: 200px;
+    }
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://static.wixstatic.com/media/398287_26feb164eac6475d8f26eaf16db50d52~mv2.png/v1/fill/w_640,h_224,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/398287_26feb164eac6475d8f26eaf16db50d52~mv2.png" alt="imagem CAMPEONATO">
+      <img src="https://automatikbr.com/wp-content/uploads/2024/03/AUTOMATIK-LOGO-1.png" alt="equipe" style="width: 20%;">
+    </div>
+    <nav>
+      <a href="javascript:void(0);" class="active" onclick="showTab('sobre')">Grupo</a>
+      <a href="javascript:void(0);" onclick="showTab('galeria')">Projetos</a>
+      <a href="javascript:void(0);" onclick="showTab('FLL')">FIRST LEGO League</a>
+    </nav>
+  </header>
+
+  <section id="sobre" class="active">
+    <div class="box">
+      <h2>Equipe</h2>
+      <p style="text-align: center;">
+        Conheça os integrantes do nosso grupo! Cada um tem um papel fundamental no sucesso dos nossos projetos de robótica:
+      </p>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://www.codigokid.com.br/assets/img/portfolio/thumbs/img-550x350-5.jpg" alt="Ana">
+          <p><strong>joão</strong><br>Idade: 7 anos<br>Função: Programadora<br></p>
+        </div>
+        <div class="team-member">
+          <img src="https://thumbs.dreamstime.com/b/o-rapaz-pequeno-na-escola-da-rob%C3%B3tica-faz-rob%C3%B4-125297038.jpg" alt="Carlos">
+          <p><strong>Dom</strong><br>Idade: 8 anos<br>Função: Engenheiro de Robôs<br</p>
+        </div>
+        <div class="team-member">
+          <img src="https://exponencialcursossorocaba.com.br/wp-content/uploads/2024/06/bg_roboticaKIDS_v2.jpg" alt="João">
+          <p><strong>João</strong><br>Idade: 13 anos<br>Função: Designer de Protótipos<br>Hobbies: Desenho, arte digital e design 3D<br>Destaque: Cuida da aparência do robô e da apresentação visual dos projetos.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://image.portaldacidade.com/unsafe/https://bucket.portaldacidade.com/brusque.portaldacidade.com/img/news/2023-11/seu-filho-pode-criar-o-proprio-robo-na-colonia-de-ferias-da-codigokid-6564a2139ec91.jpeg" alt="Lívia">
+          <p><strong>Lívia</strong><br>Idade: 14 anos<br>Função: Especialista em Eletrônica<br>Hobbies: Circuitos, experimentos e música<br>Destaque: Responsável pelas conexões, sensores e placas eletrônicas.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i0.wp.com/educacional.com.br/wp-content/uploads/2024/09/pilares-da-robotica-1.jpg" alt="Marcos">
+          <p><strong>Marcos</strong><br>Idade: 13 anos<br>Função: Testador de Protótipos<br>Hobbies: Corrida de robôs e futebol<br>Destaque: Verifica se o robô está funcionando corretamente em todas as fases.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/whatsappimageat_WSbzJYW.jpg" alt="Julia">
+          <p><strong>Julia</strong><br>Idade: 14 anos<br>Função: Coordenadora de Projetos<br>Hobbies: Organização, apresentações e pintura<br>Destaque: Lidera a equipe, planeja os projetos e cuida da comunicação nas competições.</p>
+        </div>
+      </div>
+    </div><br>
+    <div class="box">
+      <h2>Sobre o Grupo</h2>
+      <p>Somos um grupo de estudantes apaixonados por tecnologia e robótica. Participamos de competições e criamos projetos inovadores.</p>
+      <img src="https://cms.fiemt.ind.br/arquivos/sesi/images/conteudos/img-destaque/Young%20Creators%20(12).jpg" alt="foto da equipe">
+    </div><br>
+    <div class="box">
+      <h2>História do grupo</h2>
+      <p>Nos formamos em 2025, na escola. Enquanto desenvolvíamos projetos menores de robótica, percebemos que todos gostavam muito do que estavam fazendo. Cada montagem, cada programação, era feita com empolgação — e o mais legal era que conseguíamos trabalhar muito bem em equipe!
+
+Foi aí que começou a surgir uma ideia: e se usássemos tudo isso que estamos aprendendo para ir mais longe? Percebemos que juntos, tínhamos força, criatividade e muita vontade de crescer. Então decidimos que queríamos competir.
+
+E assim nasceu o nosso grupo de robótica LEGO — com coragem, amizade e muitos sonhos pela frente!
+
+</p>
+    </div><br>
+    <div class="box">
+      <h2>Sede do grupo</h2>
+      <p>Somos de São Paulo, no bairro da Liberdade.</p>
+      <img src="https://lh5.googleusercontent.com/p/AF1QipNMChiQxBbmtXWmt1zDHisTdySovVN0wU57KDI=w650-h486-k-no" alt="Colégio da equipe">
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="box">
+      <h2>Projetos</h2>
+      <div class="galeria-item">
+    <div style="display: flex; align-items: center;">
+    <img src="https://cdn.awsli.com.br/2240/2240977/produto/2163100623e9965681f.jpg" style="width: 400px; height: auto; margin-right: 60px;">
+    <p>Robô submarino! <br>
+          Este projeto em forma de submarino explora ooceano. <br>
+          O robô é programado para identificar lixo e limpando ele do oceano. <br>
+      Um ótimo exemplo de automação básica em ação!</p>
+  </div>
+<div style="display: flex; align-items: center; justify-content: flex-end;">
+  <p style="margin-right: 60px;">
+   Robô dançarino em ação! <br>
+          Ele sincroniza movimentos com o ritmo da música. <br>
+          Uma mistura de engenharia e diversão.    
+  </p>
+  <img
+    src="https://i0.wp.com/educacional.com.br/wp-content/uploads/2023/06/image-14.webp?w=721&ssl=1"
+    alt="imagem carregando"
+    style="width: 300px; height: auto;">
+</div>
+         <div style="display: flex; align-items: center;">
+    <img src="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt6fdb0d2d2f7b00ed/5fc4bc4609ed4c6f277f147f/teacher-parts-ef532aa74d8575c21d26f52da260fae5.png?locale=pt-br&auto=webp&format=jpeg&width=800&quality=90&fit=bounds" alt="Descrição da imagem" style="width: 400px; height: auto; margin-right: 60px;">
+    <p> Um robô versátil com peças modulares. <br>
+          Ideal para testes de mobilidade e controle remoto. <br>
+          Excelente para aprender sobre montagem e programação.</p>
+  </div>
+        <div style="display: flex; align-items: center; justify-content: flex-end;">
+  <p style="margin-right: 60px;">
+    Este é o Robô Pulga! <br>
+          Pequeno, ágil e veloz. <br>
+          Projetado para corridas e desafios de labirinto.    
+  </p>
+  <img
+    src="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltbd3c4a0796fee6f0/60ee9b9f6a54304c405909ba/student-06.png?locale=pt-br&auto=webp&format=jpeg&width=800&quality=90&fit=bounds"
+    alt="imagem carregando"
+    style="width: 300px; height: auto;">
+</div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="FLL">
+    <h2>FIRST LEGO League (FLL) 🤖🌍</h2>
+    <p>
+      A <strong>FIRST LEGO League</strong> é uma competição internacional de robótica educacional que incentiva crianças e adolescentes a resolverem problemas do mundo real usando ciência, tecnologia, engenharia e matemática (STEM) 💡🔧📐.
+    </p>
+    <p>
+      As equipes devem projetar, construir e programar robôs feitos com peças LEGO 🧱 para cumprir missões em uma mesa de desafios. Além disso, cada time desenvolve um <strong>Projeto de Inovação</strong> 💭, propondo soluções criativas para temas super atuais!
+    </p>
+    <p>
+      A FLL valoriza o <strong>trabalho em equipe</strong> 👥, o <strong>respeito</strong> 🙌 e a <strong>cooperação</strong> mesmo durante a competição — é o famoso “<em>coopertition</em>” 🤝.
+    </p>
+    <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/cecfo.jpg" alt="Mesa de desafios FLL" style=width="300" height="300">
+    <p>Nosso grupo está se preparando com tudo para competir na FLL! 💪 Estamos animados para mostrar nossas ideias, aprender com outras equipes e, claro, nos divertir muito durante o processo! 🚀🏆</p>
+    </div>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> Grupo de Robótica
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => link.classList.remove('active'));
+     
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`nav a[onclick="showTab('${tabId}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
