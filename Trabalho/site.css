@@ -4,5 +4,19 @@
   
   .galeria-item img:hover {
     transform: scale(1.1); 
+  }@keyframes zoomIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
+  
+  .zoom-in {
+    animation: zoomIn 0.6s ease-in-out forwards;
+  }
+  
   

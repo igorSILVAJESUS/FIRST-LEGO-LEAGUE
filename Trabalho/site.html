@@ -57,12 +57,22 @@
     section.active {
       display: block;
     }
-    .box {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      padding: 2rem;
-    }
+  .box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .box:active {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
     img {
       max-width: 100%;
       border-radius: 8px;
@@ -92,6 +102,13 @@
       border-radius: 50%;
       margin-bottom: 0.5rem;
     }
+    .galeria-item img {
+  transition: transform 0.3s ease;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.1);
+}
   </style>
 </head>
 <body>
