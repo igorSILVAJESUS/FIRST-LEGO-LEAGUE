@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo de Robótica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+    header {
+      background-color: #00008B;
+      color: white;
+      padding-bottom: 0;
+      text-align: center;
+    }
+    .logo-container {
+      background-color: #00008B;
+      padding: 1rem;
+    }
+    .logo-container img {
+      width: 30%;
+    }
+    nav {
+      background-color: #0000FF;
+      padding: 0.5rem;
+      border-top: 2px solid white;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background-color: #1E3A8A;
+    }
+    nav a.active {
+      background-color: #2563EB;
+    }
+    section {
+      display: none;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 8px;
+      transition: opacity 0.5s ease;
+      opacity: 0;
+    }
+    section.active {
+      display: block;
+      opacity: 1;
+    }
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .box:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .box:active {
+      transform: scale(1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ff6900;
+      color: white;
+      margin-top: 1rem;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .team-member {
+      text-align: center;
+      max-width: 200px;
+    }
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    .galeria-item img {
+      transition: transform 0.3s ease;
+    }
+    .galeria-item img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://static.wixstatic.com/media/398287_26feb164eac6475d8f26eaf16db50d52~mv2.png/v1/fill/w_640,h_224,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/398287_26feb164eac6475d8f26eaf16db50d52~mv2.png" alt="Logo do Campeonato de Robótica">
+      <img src="https://automatikbr.com/wp-content/uploads/2024/03/AUTOMATIK-LOGO-1.png" alt="Logo da equipe Automatik" style="width: 20%;">
+    </div>
+    <nav>
+      <a href="javascript:void(0);" class="active" onclick="showTab('sobre')">Grupo</a>
+      <a href="javascript:void(0);" onclick="showTab('galeria')">Projetos</a>
+      <a href="javascript:void(0);" onclick="showTab('FLL')">FIRST LEGO League</a>
+    </nav>
+  </header>
+
+  <section id="sobre" class="active">
+    <div class="box">
+      <h2>Equipe</h2>
+      <p style="text-align: center;">
+        Conheça os integrantes do nosso grupo! Cada um tem um papel fundamental no sucesso dos nossos projetos de robótica:
+      </p>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://www.codigokid.com.br/assets/img/portfolio/thumbs/img-550x350-5.jpg" alt="Foto de João, programador">
+          <p><strong>João</strong><br>Idade: 7 anos<br>Função: Programador</p>
+        </div>
+        <div class="team-member">
+          <img src="https://thumbs.dreamstime.com/b/o-rapaz-pequeno-na-escola-da-rob%C3%B3tica-faz-rob%C3%B4-125297038.jpg" alt="Foto de Dom, engenheiro de robôs">
+          <p><strong>Dom</strong><br>Idade: 8 anos<br>Função: Engenheiro de Robôs</p>
+        </div>
+        <div class="team-member">
+          <img src="https://exponencialcursossorocaba.com.br/wp-content/uploads/2024/06/bg_roboticaKIDS_v2.jpg" alt="Foto de João, designer de protótipos">
+          <p><strong>João</strong><br>Idade: 13 anos<br>Função: Designer de Protótipos<br>Hobbies: Desenho, arte digital e design 3D<br>Destaque: Cuida da aparência do robô e da apresentação visual dos projetos.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://image.portaldacidade.com/unsafe/https://bucket.portaldacidade.com/brusque.portaldacidade.com/img/news/2023-11/seu-filho-pode-criar-o-proprio-robo-na-colonia-de-ferias-da-codigokid-6564a2139ec91.jpeg" alt="Foto de Lívia, especialista em eletrônica">
+          <p><strong>Lívia</strong><br>Idade: 14 anos<br>Função: Especialista em Eletrônica<br>Hobbies: Circuitos, experimentos e música<br>Destaque: Responsável pelas conexões, sensores e placas eletrônicas.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i0.wp.com/educacional.com.br/wp-content/uploads/2024/09/pilares-da-robotica-1.jpg" alt="Foto de Marcos, testador de protótipos">
+          <p><strong>Marcos</strong><br>Idade: 13 anos<br>Função: Testador de Protótipos<br>Hobbies: Corrida de robôs e futebol<br>Destaque: Verifica se o robô está funcionando corretamente em todas as fases.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/whatsappimageat_WSbzJYW.jpg" alt="Foto de Julia, coordenadora de projetos">
+          <p><strong>Julia</strong><br>Idade: 14 anos<br>Função: Coordenadora de Projetos<br>Hobbies: Organização, apresentações e pintura<br>Destaque: Lidera a equipe, planeja os projetos e cuida da comunicação nas competições.</p>
+        </div>
+      </div>
+    </div><br>
+    <div class="box">
+      <h2>Sobre o Grupo</h2>
+      <p>Somos um grupo de estudantes apaixonados por tecnologia e robótica. Participamos de competições e criamos projetos inovadores.</p>
+      <img src="https://cms.fiemt.ind.br/arquivos/sesi/images/conteudos/img-destaque/Young%20Creators%20(12).jpg" alt="Foto da equipe reunida durante competição">
+    </div><br>
+    <div class="box">
+      <h2>História do grupo</h2>
+      <p>Nos formamos em 2025, na escola. Enquanto desenvolvíamos projetos menores de robótica, percebemos que todos gostavam muito do que estavam fazendo. Cada montagem, cada programação, era feita com empolgação — e o mais legal era que
